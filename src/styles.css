@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  app-root {
+    display: flex;
+    justify-content: center;
+    align-items: center top;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+ @keyframes dots {
+    50% {
+      transform: translateY(-.10rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .d {
+    animation: dots 3.5s ease-out infinite;
+    font-size: 80px; 
+    text-align: center;
+  }
+  .d-2 {
+    animation-delay: .7s;
+    font-size: 80px; 
+    text-align: center;
+  }
+  .d-3 {
+    animation-delay: 3s;
+    font-size: 80px; 
+    text-align: center;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
