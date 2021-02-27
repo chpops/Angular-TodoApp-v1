@@ -6,33 +6,27 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
+
 export class TodoComponent implements OnInit {
 
-  public title = '';
-
-  todo = [
-    'Get to work',
-    'Pick up groceries',
-    'Brush teeth',
-    'Take a shower',
-    'Buy eggs'
-  ];
-
-  processed = [
-    'Saw thing',
-    'Hit the gym',
-    'Read a book'
-  ];
+  public todo : string [];
 
   done = [
     'Get up',
     'Pay bills'
   ];
 
-  constructor() { }
+  process = [
+    'Buy a helmet',
+    'Learn Sketch',
+    'Analyze the survey results'
+  ];
+
+  constructor() { };
   
   ngOnInit(): void {
-  }
+    this.todo = ['Test Task 1', 'Test Task 2', 'Test Task 3']
+  };
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
@@ -45,4 +39,4 @@ export class TodoComponent implements OnInit {
     };
   };
 
-}
+};

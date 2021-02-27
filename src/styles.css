@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
   }
 
   app-root {
@@ -11,6 +12,10 @@
     align-items: center top;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
+  html, body { height: 100%; background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: top center; }
 
  @keyframes dots {
     50% {
@@ -36,5 +41,5 @@
     font-size: 80px; 
     text-align: center;
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  
